@@ -1,9 +1,14 @@
-//Exercice : Cours Initiation Javascript - Les fonctions
-const FIRST_NAME = 'Julien'
-let getName = prompt('Donnez votre nom :')
+//Exercice : Cours Initiation Javascript - Les fonctions 
+//Calcul de volume
 
-function showName() {
-  return FIRST_NAME
+const height = prompt('Hauteur du parallélépipèdes ');
+const width = prompt('Largeur du parallélépipèdes ');
+const depth = prompt('Profondeur du parallélépipèdes ');;
+
+const volume = cube(height, width, depth);
+
+
+function cube(height,width,depth) {
+  return height * width * depth
 }
-
-console.log (`Bonjour ${showName()} ${getName}`)
+console.log (`Le volume du parallélépipèdes est ${volume}`)
