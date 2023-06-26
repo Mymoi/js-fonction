@@ -1,14 +1,12 @@
 //Exercice : Cours Initiation Javascript - Les fonctions 
-//Calcul de volume
+//Mettre le début d'un mot en majuscule et le reste en minuscule
 
-const height = prompt('Hauteur du parallélépipèdes ');
-const width = prompt('Largeur du parallélépipèdes ');
-const depth = prompt('Profondeur du parallélépipèdes ');;
+let WORD = prompt("Taper un mot : ")
 
-const volume = cube(height, width, depth);
-
-
-function cube(height,width,depth) {
-  return height * width * depth
+function wordCase(word) {
+    let fistLetterWord = word.substring(0,1)
+    let otherLetterWord = word.substring(1)
+    console.log("Votre mot :  " + fistLetterWord.toUpperCase() + otherLetterWord.toLowerCase());
 }
-console.log (`Le volume du parallélépipèdes est ${volume}`)
+
+wordCase()
