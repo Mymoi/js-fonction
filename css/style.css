@@ -1,0 +1,13 @@
+/* Exercice : Cours Initiation Javascript - Les fonctions */
+/* DEFI : calcul de prix lors de solde, d'une boutique en ligne */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.product {
+  margin: 2rem;
+}
